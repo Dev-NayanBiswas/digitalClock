@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "monolisa", Courier, monospace;
+}
+body {
+    background: black;
+    color: antiquewhite;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-block-size: 100dvh;
+}
+h1{
+    -webkit-box-reflect: below -5px linear-gradient(
+        transparent, rgba(255, 255, 255, 0.172) 
+    )
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    position: relative;
+        & #ghaura{
+            position: absolute;
+            right: 0 px;
+            top: 0 px;
+            align-self: baseline;
+            right: -1.5rem;
+            bottom: 0rem;
+            -webkit-box-reflect: below 5px linear-gradient(
+        transparent, rgba(255, 255, 255, 0.145) 
+    )
+        }
+}
+section .card{
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.145), transparent  
+    );
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.2rem 0.2rem 0rem 0.2rem;
+    border-radius: 0.3rem;
+    width: 8dvw;
+    
+    & span{
+        font-size: 2rem;
+        font-family: cursive;
+        padding: 0rem 0.5rem;
+    }
+    & article{
+        font-size: 0.7rem;
+        padding-bottom: 0.5rem;
+        color: rgba(182, 239, 173, 0.901);
+    }
+    -webkit-box-reflect: below 5px linear-gradient(
+        transparent, rgba(255, 255, 255, 0.145) 
+    )
+}
